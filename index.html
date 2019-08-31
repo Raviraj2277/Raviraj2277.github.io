@@ -58,10 +58,10 @@
                <div class="collapse navbar-collapse " id="collapsenavbar">
                    <ul class="navbar-nav ml-auto">
                        <li class="navbar-item "> 
-                           <a href="#services" class="nav-link js-scroll-trigger text-white">SERVICES</a>
+                           <a href="#services" class="nav-link text-white" >SERVICES</a>
                        </li>
                        <li class="navbar-item "> 
-                            <a href="" class="nav-link js-scroll-trigger text-white">ABOUT US</a>
+                            <a href="#abtus" class="nav-link text-white">ABOUT US</a>
                         </li>
                         <li class="navbar-item  "> 
                                 <a href="" class="nav-link js-scroll-trigger text-white">CONTACT</a>
@@ -168,7 +168,7 @@
 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <div class="container-fluid" id="bg3">
-            <footer class="container ">
+            <footer class="container " id="abtus">
           <div class="row foot">
         
             <div id="foot1" class="col-md-3 col-sm-3">
@@ -215,10 +215,14 @@
         <section class="container-fluid" id="foot5">
                 <h6 class="text-center text-muted ">Copyrights © 2019 SmartCatchers.com</h4>
               </section>
-      <script type="text/javascript"> 
+    <!--  <script type="text/javascript"> 
       $('.js-scroll-trigger').click(function(){
           $('.navbar-collapse').collapse('hide');
-      }); </script>
+      }); </script> -->
+      <script type="text/javascript">
+      $('.navbar-nav>li>a').on('click',function(){
+        $('.navbar-collapse').collapse('hide');
+    }); </script>
 
 <script>var wow = new WOW(
     {

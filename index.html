@@ -2,42 +2,57 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Close mobile bootstrap menu after click</title>
-  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel="stylesheet" href="style.css">
+  <title>Animated Intro With jQuery</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,700,800,900">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div id="main">
-<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#top">Menu</a>
+<div class="intro">
+   <div class="animated-bar"></div>
+
+   <div class="slide slide-a">
+      <div class="slide-content">
+         <p class="slide-a-child">Hi There!</p>
+         <h1 class="slide-a-child">My name is Mohamed</h1>
+         <p class="slide-a-child">I'm a Front End web developer</p>
       </div>
-      <div id="navbarCollapse" class="navbar-collapse collapse" style="height: 1px;"> <!--class="pull"-->
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#intro">Ваша проблема</a></li>
-          <li><a href="#features">Наше решение</a></li>
-          <li><a href="#responsive">Выгоды</a></li>
-          <li><a href="#portfolio">raviraj</a></li>
-          <li><a href="#team">Команда</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
+   </div>
+
+   <div class="slide slide-b">
+      <div class="slide-content">
+         <h2 class="slide-b-child">what I do</h2>
+         <p class="slide-b-child">I design modern, clean and creative websites</p>
+         <p class="slide-b-child">And make them alive on the internet</p>
       </div>
-    </div>
-  </div></nav>
- </div>
+   </div>
+
+   <div class="slide slide-c">
+      <div class="slide-content">
+         <h2 class="slide-c-child">What I use</h2>
+         <ul>
+            <li class="slide-c-child"><p>Adobe Photoshop</p></li>
+            <li class="slide-c-child"><p>HTML5</p></li>
+            <li class="slide-c-child"><p>CSS3</p></li>
+            <li class="slide-c-child"><p>Javascript</p></li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="slide slide-d">
+      <div class="slide-content">
+         <h2 class="slide-d-child">Thanks for watching </h2>
+         <p class="slide-d-child">You can check me on <a href="http://mohamdhasan.pro/" target="_blank">Mohamdhasan.pro</a></p>
+         <button class="slide-d-child replay">Replay</button>
+      </div>
+   </div>
+
+</div>
 <!-- partial -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-<script  src="script.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="./script.js"></script>
 
 </body>
 </html>
